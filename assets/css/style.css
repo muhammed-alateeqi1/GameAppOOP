@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Comfortaa", cursive;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #272b30;
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+header img {
+  height: 30vh;
+  object-fit: cover;
+}
+.navbar {
+  background-color: #3a497b;
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 75%;
+  margin: auto;
+}
+.navbar-nav {
+  text-transform: uppercase;
+}
+.navbar-nav .nav-item {
+  font-size: 12px;
+}
+.navbar-nav .nav-item a {
+  color: #fff;
+  transition: all ease 0.3s;
+}
+.navbar-nav .nav-item a:hover {
+  color: #0099cc;
+}
+.active{
+  color: #0099cc !important; 
+}
+
+@media (max-width:500px) {
+  .navbar {
+    width: 100%;
+  }
+  header img{
+    height: 13vh;
+    object-fit: cover;
+  }
+}
+
+/* CARD */
+.card-body {
+  background-color: #272b30;
+  padding: 10px;
+}
+.card-body img {
+  transition: all ease 0.3s;
+}
+.card-container {
+  transition: all ease 0.5s;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.218);
+}
+.card-container:hover {
+  scale: 1.05;
+}
+.card-body:hover img {
+  opacity: 1 !important;
+}
+.card-header span {
+  background-color: #0d6efd;
+  transition: all ease 0.3s;
+}
+.card-body:hover .card-header span {
+  opacity: 1 !important;
+}
+.card-body .card-header {
+  justify-content: space-between;
+}
+
+footer {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.063);
+}
+footer span {
+  background-color: #32383e;
+}
+
+
+/* loading spinner */
+
+.spinner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #272b3070;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all ease .5s;
+}
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #fcfcfc #5196f100;
+  animation: l1 1s infinite;
+  position: relative;
+  transition: all ease .2s;
+
+}
+@keyframes l1 {to{transform: rotate(.5turn)}}
